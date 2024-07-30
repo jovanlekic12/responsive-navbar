@@ -4,6 +4,7 @@ html {
 
 .main-nav {
   display: flex;
+  transform: translate(0, 0);
 }
 
 .main-nav-list {
@@ -53,6 +54,22 @@ html {
   width: 4.8rem;
   height: 4.8rem;
   display: none;
+  color: #444;
+}
+
+.header-btn:hover {
+  cursor: pointer;
+}
+
+.x-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: none;
+  color: #444;
+}
+
+.x-icon {
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -72,8 +89,19 @@ html {
     justify-content: center;
     background-color: white;
     transform: translate(100%, 0);
+    transition: all ease 0.3s;
   }
   .header-btn {
     display: block;
+  }
+  .x-icon {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .main-nav-mobile {
+    transform: translate(0, 0);
   }
 }
